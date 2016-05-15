@@ -30,7 +30,7 @@ class API:
         if icon_url is not None:
             j = {'text': text, 'username': name, 'icon_url': icon_url}
         elif icon_emoji is not None:
-            j = {'text': text, 'username': name, 'icon_emoji': icon_url}
+            j = {'text': text, 'username': name, 'icon_emoji': icon_emoji}
         else:
             assert False, 'icon_url or icon_emoji is required'
         params = {'payload': json.dumps(j)}
